@@ -6,10 +6,7 @@
     <title>Cortes Virais: Domine TikTok e Exploda com Seu Ebook - Apenas R$ 10,99</title>
     <meta name="description" content="Aprenda cortes virais para TikTok e viralize seus vídeos. Ebook completo por apenas R$ 10,99. Prévia grátis!">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Sign-In Script -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <style>
-        /* Seu CSS existente aqui */
         body { 
             background-color: #000; 
             color: white; 
@@ -67,6 +64,9 @@
             font-weight: bold; 
             box-shadow: 0 0 20px rgba(255,215,0,0.8); 
             transition: all 0.3s ease; 
+            margin: 10px; 
+            text-decoration: none; 
+            display: inline-block; 
         }
         .hero .cta-button:hover { 
             background-color: #000; 
@@ -117,18 +117,6 @@
             box-shadow: 0 4px 8px rgba(255,215,0,0.3); 
             margin: 20px 0; 
         }
-        .login-section { 
-            padding: 50px 20px; 
-            background-color: #333; 
-            text-align: center; 
-        }
-        .login-section h2 { 
-            color: #FFD700; 
-            text-shadow: 0 0 10px #FFD700; 
-        }
-        .g_id_signin { 
-            margin: 20px 0; 
-        }
         @media (max-width: 768px) { 
             .hero h1 { font-size: 2.5em; } 
             .hero p { font-size: 1.5em; } 
@@ -147,6 +135,7 @@
             <h1>Domine Cortes e Exploda no TikTok! 🔥</h1>
             <p>Tudo que Você Precisa para Viralizar</p>
             <p class="price">De <span class="strikethrough">R$ 20,99</span> por apenas R$ 10,99</p>
+            <a href="https://t.me/+d5tJXa7fOj45YzUx" target="_blank" class="cta-button">Entre no Grupo Exclusivo de Compradores no Telegram! 🚀</a>
             <button class="cta-button" onclick="window.open('https://nubank.com.br/cobrar/35erh9/697954b1-2076-469e-871b-2537e5757ac1', '_blank')">Comprar Agora e Viralizar! 🚀</button>
         </div>
     </section>
@@ -176,28 +165,6 @@
         </div>
     </section>
 
-    <section class="login-section">
-        <div class="container">
-            <h2>Faça Login com Google para Acessar Mais Conteúdo</h2>
-            <p>Entre com sua conta Google para ver prévias exclusivas ou liberar downloads.</p>
-            <div id="g_id_onload"
-                 data-client_id="YOUR_CLIENT_ID"
-                 data-context="signin"
-                 data-ux_mode="popup"
-                 data-callback="handleCredentialResponse"
-                 data-auto_prompt="false">
-            </div>
-            <div class="g_id_signin"
-                 data-type="standard"
-                 data-shape="rectangular"
-                 data-theme="outline"
-                 data-text="signin_with"
-                 data-size="large"
-                 data-logo_alignment="left">
-            </div>
-        </div>
-    </section>
-
     <section class="benefits">
         <div class="container">
             <h2>Por Que Escolher Agora? ⚡</h2>
@@ -219,25 +186,5 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function handleCredentialResponse(response) {
-            console.log("ID: " + response.credential);
-            // Aqui você pode usar o token para liberar conteúdo, ex.:
-            alert("Login bem-sucedido! Agora você pode acessar conteúdo exclusivo.");
-            // Exemplo: Mostrar um link oculto
-            document.getElementById('exclusive-content').style.display = 'block';
-        }
-        window.onload = function () {
-            google.accounts.id.initialize({
-                client_id: "YOUR_CLIENT_ID",
-                callback: handleCredentialResponse
-            });
-            google.accounts.id.renderButton(
-                document.getElementById("g_id_onload"),
-                { theme: "outline", size: "large" }
-            );
-            google.accounts.id.prompt();
-        }
-    </script>
 </body>
-</html># domine-cortes
+</html>
